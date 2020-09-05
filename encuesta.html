@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>COVID-19</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+   <body>
+
+     <header>
+       <img src="img2/logopag.png">
+         <h1><p>ENCUESTA DE SÍNTOMAS<p></h1>
+         <hr>
+         <nav>
+          <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="paises_fasepruebas.html">PAÍSES EN FASE DE PRUEBA</a></li>
+          <li><a href="encuesta.html">ENCUESTA</a></li>
+          </ul>
+          </nav>
+          <hr>
+     </header>
+     <section>
+       <div>
+         <form method="POST" action="encuesta.html">
+           <table align="center" cellspacing="4" cellpadding="4" border="2"cellspacing="4" cellpadding="4" border="2" border bgcolor="white">
+             <tbody>
+             <center><img src="img2/registro.png"></center>
+             <tr><td><label>NOMBRES:</label></td><td><input type="text" name="nombre" placeholder="Digite sus nombres" required></td></tr>
+             <tr><td><label>APELLIDOS:</label></td><td><input type="text" name="apellido" placeholder="Digite sus apellidos" required></td></tr>
+             <tr><td><label>Registre su temperatura corporal:</label></td><td><select name="option"><option>Menos de 37°C</option><option>Entre 37 y 38°C</option><option>Entre 38 y 39°C</option><option>Mas de 39°C</option></selected></td></tr>
+             <tr><td><label>¿Vive con personas de alto riesgo<br>
+             (tercera edad – menores de 2 años)?:</label></td><td><input type="Radio" name="si" value="Si">Si
+             <input type="Radio" name="no" value="No">No</td></tr>
+             <tr><td><label>¿Qué síntomas presenta?:</label></td><td><select name="option"><option>Tos</option><option>Dolor de cabeza</option><option>Dolor de garganta</option><option>Problemas al respirar</option><option>Ninguno</option></selected></td></tr>
+             <tr><td><label>¿Ha tenido contacto con<br>
+             viajeros del exterior o nacionales?:</label></td><td><input type="Radio" name="noo" value="Noo">No
+             <input type="Radio" name="sii" value="Sii">Si</td></tr>
+             <tr><td><label>¿En términos generales que tan satisfecho<br>
+               esta con los servicios prestados?:</label></td><td><select name="option"><option>Muy satisfecho</option><option>Satisfecho</option><option>Poco satisfecho</option></selected></td></tr>
+             <tr><td><input type="reset" name="limpiar" value="limpiar"></td><td><input type="submit" name="enviar" value="enviar"></td></tr>
+             </tbody>
+             <nav>
+               <tr><td align="center"><ul><li><a href="./resultados.html">RESULTADOS</a></li></ul></td></tr>
+               <tr><td><ul><li><a href="./index.html">REGRESAR</a></li></ul></td></tr>
+             </nav>
+             <tbody>
+           </table>
+         </form>
+       </div>
+     </section>
+     <hr>
+     <footer>
+
+         <h3>Oficina editorial central</h3>
+         <p>Correo: covid_19@360.com.co</p>
+         <p>Direccion: Calle 68 n 46-10 Bogota-Colombia</p>
+         <p>Tel: 018009872259</p>
+         <img src="img2/logofooter.png">
+
+     </footer>
+    </body>
+
+</html>
