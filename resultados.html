@@ -2,28 +2,44 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COVID-19</title>
+    <link rel="stylesheet"  href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="estilo.css">
   </head>
    <body>
 
      <header>
-       <img src="img2/logopag.png">
-         <h1><p>RESULTADOS DE LA ENCUESTA<p></h1>
-         <hr>
-         <nav>
-          <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="paises_fasepruebas.html">PAÍSES EN FASE DE PRUEBA</a></li>
-          <li><a href="encuesta.html">ENCUESTA</a></li>
-          </ul>
-          </nav>
-          <hr>
+       <nav class=" navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">COVID 360°</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+           <ul class="navbar-nav mr-auto">
+               <li class="nav-item"><a class="nav-link" href="./index.html">INICIO</a></li>
+               <li class="nav-item"><a class="nav-link" href="./paises_fasepruebas.html">PAISES EN FASE DE PRUEBA</a></li>
+               <li class="nav-item"><a class="nav-link" href="./encuesta.html">ENCUESTA</a></li>
+               <li class="nav-item"><a class="nav-link" href="./login.html">LOGIN</a></li>
+               <li class="nav-item"><a class="nav-link" href="./registro.html">REGISTRO</a></li>
+               <li class="nav-item active"><a class="nav-link" href="#">RESULTADOS</a></li>
+               <li class="nav-item"><a class="nav-link" href="./usuarios_registrados.html">USUARIOS REGISTRADOS</a></li>
+           </ul>
+         </div>
+         </nav>
+  <br>
+  <br>
+    <header>
+    <img src="img2/logopag.png">
+    <h1 class="display-5"><p>RESULTADOS DE LA ENCUESTA<p></h1>
+    <hr>
      </header>
      <section>
-        <h2>RESULTADOS DE LA ENCUESTA</h2>
         <br>
-        <table style="background-color: white" border="1" align="center">
+        <div class="container">
+          <div class="card border">
+        <table class="table table-striped" style="background-color: white" border="1" align="center">
 
             <tr><th>Registre su temperatura corporal.</th>
                 <th>¿Vive con personas de alto riesgo
@@ -79,7 +95,8 @@
             <progress value="30" max="100"> 30% </progress></th>
 
         </table>
-
+        </div>
+      </div>
         <br>
         <br>
 
@@ -94,6 +111,9 @@
          <img src="img2/logofooter.png">
 
      </footer>
+     <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 
 </html>

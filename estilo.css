@@ -9,18 +9,14 @@ footer
 }
 h3
 {
-color: white;
 text-align: center;
 }
 p
 {
   text-align: center;
-  color: white;
 }
 body
- {
-   background-color: #4CBB7B;
- }
+
  label
  {
    color: black;
@@ -28,7 +24,6 @@ body
  p1
  {
    text-align: center;
-   font-size: 17px;
  }
  table
 {
@@ -36,6 +31,5 @@ body
 }
 h2
 {
-color: white;
 text-align: center;
 }

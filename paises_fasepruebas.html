@@ -2,42 +2,56 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COVID-19</title>
+    <link rel="stylesheet"  href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="estilo.css">
   </head>
    <body>
-
+     <nav class=" navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">COVID 360°</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+         <ul class="navbar-nav mr-auto">
+             <li class="nav-item"><a class="nav-link" href="./index.html">INICIO</a></li>
+             <li class="nav-item active"><a class="nav-link" href="#">PAISES EN FASE DE PRUEBA</a></li>
+             <li class="nav-item"><a class="nav-link" href="./encuesta.html">ENCUESTA</a></li>
+             <li class="nav-item"><a class="nav-link" href="./login.html">LOGIN</a></li>
+             <li class="nav-item"><a class="nav-link" href="./registro.html">REGISTRO</a></li>
+             <li class="nav-item"><a class="nav-link" href="./resultados.html">RESULTADOS</a></li>
+             <li class="nav-item"><a class="nav-link" href="./usuarios_registrados.html">USUARIOS REGISTRADOS</a></li>
+         </ul>
+       </div>
+       </nav>
+  <br>
+  <br>
      <header>
        <img src="img2/logopag.png">
-       <h1><p>Países en fase de prueba<p></h1>
-         <hr>
-         <nav>
-          <ul>
-          <li><a href="index.html">INICIO</a></li>
-          <li><a href="paises_fasepruebas.html">PAÍSES EN FASE DE PRUEBA</a></li>
-          <li><a href="encuesta.html">ENCUESTA</a></li>
-          </ul>
-          </nav>
-          <hr>
      </header>
-     <section>
-      <div>
-        <table align="center" border bgcolor="white">
-        <tr><td><img src="img/portada.png"></td><td>
+      <div class="container">
+        <div class="card border">
+        <table class="table">
+          <div class="card-header"><center><h4>PAÍSES EN FASE DE PRUEBAS</h4></center></div>
+          <div class="card-body text-primary">
+        <tr><td><img src="img/portada.png" class="img-fluid" alt="Responsive image"></td><td>
         </table>
-        <table align="center" cellspacing="4" cellpadding="4" border="2"cellspacing="4" cellpadding="4" border="2" border bgcolor="white">
+        <table class="table">
         <tr><td>Bandera</td><td>Bandera</td><td>Bandera</td><td>Bandera</td><td>Bandera</td></tr>
-        <tr><td><img src="img/brazil.png"></td><td><img src="img/bulgaria.png"></td><td><img src="img/canada.png"></td><td><img src="img/china.png"></td><td><img src="img/slovenia.png"></td></tr>
+        <tr><td><img src="img/brazil.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/bulgaria.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/canada.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/china.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/slovenia.png" class="img-fluid" alt="Responsive image"></td></tr>
         <tr><td>Brazil</td><td>Bulgaria</td><td>Canada</td><td>China</td><td>Eslovenia</td></tr>
-        <tr><td><img src="img/colombia.png"></td><td><img src="img/denmark.png"></td><td><img src="img/ecuador.png"></td><td><img src="img/el_salvador.png"></td><td><img src="img/spain.png"></td></tr>
+        <tr><td><img src="img/colombia.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/denmark.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/ecuador.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/el_salvador.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/spain.png" class="img-fluid" alt="Responsive image"></td></tr>
         <tr><td>Colombia</td><td>Dinamarca</td><td>Ecuador</td><td>El Salvador</td><td>España</td></tr>
-        <tr><td><img src="img/georgia.png"></td><td><img src="img/guatemala.png"></td><td><img src="img/ireland.png"></td><td><img src="img/israel.png"></td><td><img src="img/sudan.png"></td></tr>
+        <tr><td><img src="img/georgia.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/guatemala.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/ireland.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/israel.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/sudan.png" class="img-fluid" alt="Responsive image"></td></tr>
         <tr><td>Georgia</td><td>Guatemala</td><td>Irlanda</td><td>Israel</td><td>Sudan</td></tr>
-        <tr><td><img src="img/italy.png"></td><td><img src="img/japan.png"></td><td><img src="img/senegal.png"></td><td><img src="img/somalia.png"></td><td><img src="img/suriname.png"></td></tr>
+        <tr><td><img src="img/italy.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/japan.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/senegal.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/somalia.png" class="img-fluid" alt="Responsive image"></td><td><img src="img/suriname.png" class="img-fluid" alt="Responsive image"></td></tr>
         <tr><td>Italia</td><td>Japon</td><td>Senegal</td><td>Somalia</td><td>Surinam</td></tr>
         </table>
       </div>
-     </section>
+      </div>
+    </div>
+
      <hr>
      <footer>
 
@@ -48,6 +62,9 @@
          <img src="img2/logofooter.png">
 
      </footer>
+     <script src="node_modules/jQuery/dist/jQuery.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     </body>
 
 </html>
